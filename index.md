@@ -11,6 +11,6 @@ of the **ACKNEX** engine (3D GameStudio).
 
 ---
 
-The [API Reference](api/) groups the **308** keywords by **object type**
+The [API Reference](api/) groups the **455** keywords by **object type**
 (actions, actors, walls, regions, …), listed alphabetically. Prefer a single
 flat list? See the [Keywords A–Z](keywords.html) index.

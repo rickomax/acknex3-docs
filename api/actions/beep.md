@@ -3,7 +3,7 @@ layout: default
 title: "BEEP"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 5
+nav_order: 9
 ---
 
 # `BEEP` `;`

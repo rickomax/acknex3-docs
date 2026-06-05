@@ -3,7 +3,7 @@ layout: default
 title: "SCREEN_HGT"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 73
+nav_order: 123
 ---
 
 # `SCREEN_HGT` `(skill)`

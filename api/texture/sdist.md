@@ -3,7 +3,7 @@ layout: default
 title: "SDIST"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 12
+nav_order: 22
 ---
 
 # `SDIST` `Number;`

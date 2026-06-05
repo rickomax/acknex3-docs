@@ -17,12 +17,34 @@ Skills are numeric properties (like variables) belonging to the player and objec
 | [`ACTIVE_OBJTICKS`](globals/active_objticks.html) | Number of objects with running EACH_TICK actions (WRUN.EXE only). |
 | [`ACTIVE_REGTICKS`](globals/active_regticks.html) | Number of regions with running EACH_TICK actions (WRUN.EXE only). |
 | [`ACTIVE_TARGETS`](globals/active_targets.html) | Number of actors with a TARGET (WRUN.EXE only). |
+| [`ACTOR_CEIL_HGT`](globals/actor_ceil_hgt.html) | Ceiling height at the actor's position; valid only for TARGET-moved actors with CAREFULLY, inside EACH_TICK, right after a move. |
+| [`ACTOR_CLIMB`](globals/actor_climb.html) | Maximum step height (default 1) actors can climb during TARGET movements, like PLAYER_CLIMB. |
+| [`ACTOR_DIST`](globals/actor_dist.html) | Ratio of an actor's CLIP_DIST to the wall CLIP_DIST; must be <= THING_DIST. |
+| [`ACTOR_FLOOR_HGT`](globals/actor_floor_hgt.html) | Floor height at the actor's position; valid only for TARGET-moved actors with CAREFULLY, inside EACH_TICK, right after a move. |
+| [`ACTOR_IMPACT_VX`](globals/actor_impact_vx.html) | Actor's rebound speed in X on hitting an obstacle; valid only with CAREFULLY set, inside EACH_TICK, right after a move (MOVED set). |
+| [`ACTOR_IMPACT_VY`](globals/actor_impact_vy.html) | Actor's rebound speed in Y on hitting an obstacle; valid only with CAREFULLY set, inside EACH_TICK, right after a move (MOVED set). |
+| [`ACTOR_IMPACT_VZ`](globals/actor_impact_vz.html) | Actor's rebound speed in Z on hitting floor/ceiling; valid only with CAREFULLY set, inside EACH_TICK, right after a move (MOVED set). |
+| [`ACTOR_WIDTH`](globals/actor_width.html) | Factor (default 1) the texture width of all actors is multiplied by for collision detection. |
 | [`ASPECT`](globals/aspect.html) | Height-to-width ratio of the 3D view (0.1..10, default 1). |
+| [`BLUR_MODE`](globals/blur_mode.html) | When 1, motion blur is always on; at 0.5 it activates whenever the player or mouse moves (default 0). |
+| [`BOUNCE_VX`](globals/bounce_vx.html) | Reflection vector in X when the player hits a wall; add it to the player speed for a pinball-like bounce. |
+| [`BOUNCE_VY`](globals/bounce_vy.html) | Reflection vector in Y when the player hits a wall; add it to the player speed for a pinball-like bounce. |
 | [`CD_TRACK`](globals/cd_track.html) | Number of the CD-audio track currently playing (0 if stopped). |
+| [`CDAUDIO_VOL`](globals/cdaudio_vol.html) | Volume of the currently playing CD audio track (0..1); under plain DOS only. |
 | [`CEIL_HGT`](globals/ceil_hgt.html) | Actual ceiling height at the player position. |
+| [`CHANNEL`](globals/channel.html) | Number (0..7) of the sound channel the last sound was assigned to, or -1 if it could not be played. |
+| [`CHANNEL_0...CHANNEL_7`](globals/channel_0_channel_7.html) | State of each of the 8 sound channels: 0 free, 1 normal sound playing, 2 SLOOP sound playing. |
+| [`COLOR_ACTORS`](globals/color_actors.html) | Default colour number of actor symbols on the automap (default 3). |
+| [`COLOR_BORDER`](globals/color_border.html) | Default colour of border walls on the automap (default 244); a shading-range colour gives antialiased borders. |
+| [`COLOR_PLAYER`](globals/color_player.html) | Colour number of the player symbol on the automap (default 7). |
+| [`COLOR_THINGS`](globals/color_things.html) | Default colour number of thing symbols on the automap (default 13). |
+| [`COLOR_WALLS`](globals/color_walls.html) | Default colour of walls on the automap (default 244); a shading-range colour gives antialiased walls. |
 | [`DARK_DIST`](globals/dark_dist.html) | Distance of the darkness boundary; recomputed from PLAYER_LIGHT. |
 | [`DEBUG_MODE`](globals/debug_mode.html) | If 1, halts after each image build until 'S' is pressed (WRUN.EXE only). |
+| [`DELTA_ANGLE`](globals/delta_angle.html) | Angular difference between MOVE_ANGLE and PLAYER_ANGLE. |
 | [`ERROR`](globals/error.html) | Error code for the current frame (WRUN.EXE only): 0 none, 1 CLIP_DIST too small, 3 NEXUS too small, 5 missing bitmap, 6 missing region/texture, 8 bad synonym, 9 missing region. |
+| [`EYE_DIST`](globals/eye_dist.html) | Eye separation for 3-D glasses (default 0.5 steps; requires -3D_SIMEYE); 0 disables the stereoscopic effect. |
+| [`FLIC_FRAME`](globals/flic_frame.html) | Frame number of the currently playing flic; useful for syncing sound/music from a global EACH_TICK action. |
 | [`FLOOR_HGT`](globals/floor_hgt.html) | Actual floor height at the player position (slope-aware). |
 | [`FORCE_AHEAD`](globals/force_ahead.html) | Analog forward/backward input (-1..1). |
 | [`FORCE_ROT`](globals/force_rot.html) | Analog horizontal rotation input. |
@@ -34,6 +56,7 @@ Skills are numeric properties (like variables) belonging to the player and objec
 | [`HIT_MINDIST`](globals/hit_mindist.html) | Distance to the nearest object hit by EXPLODE (0 if none in range). |
 | [`HIT_X`](globals/hit_x.html) | X pixel coordinate of the texture pixel hit by SHOOT (for bullet-hole ATTACH). |
 | [`HIT_Y`](globals/hit_y.html) | Y pixel coordinate of the texture pixel hit by SHOOT. |
+| [`IMPACT_VROT`](globals/impact_vrot.html) | Change of angle of a TARGET STICK actor relative to the player after bouncing off an obstacle; can spin the player. |
 | [`IMPACT_VX`](globals/impact_vx.html) | Collision velocity change along X; auto-increased on collision, reset manually (pinball effect). |
 | [`IMPACT_VY`](globals/impact_vy.html) | Collision velocity change along Y. |
 | [`IMPACT_VZ`](globals/impact_vz.html) | Collision velocity change along Z (floor/ceiling). |
@@ -41,23 +64,49 @@ Skills are numeric properties (like variables) belonging to the player and objec
 | [`INV_DIST`](globals/inv_dist.html) | Reciprocal of the SHOOT hit distance. |
 | [`JOY_4`](globals/joy_4.html) | State of joystick button 4. |
 | [`JOY_SENSE`](globals/joy_sense.html) | Joystick movement sensitivity (default 1). |
+| [`JOYSTICK_X`](globals/joystick_x.html) | Joystick X-axis movement in the range -255..+255. |
+| [`JOYSTICK_Y`](globals/joystick_y.html) | Joystick Y-axis movement in the range -255..+255. |
+| [`KEY_A...KEY_Z`](globals/key_a_key_z.html) | 1 while the corresponding letter key is pressed, otherwise 0. |
+| [`KEY_ANY`](globals/key_any.html) | 1 while any key is pressed, otherwise 0. |
+| [`KEY_F1...KEY_F12`](globals/key_f1_key_f12.html) | 1 while the corresponding function key is pressed, otherwise 0. |
 | [`KEY_F1...KEY_Z`](globals/key_f1_key_z.html) | Key-state skills (0/1): KEY_F1..KEY_F12, KEY_ESC, KEY_TAB, KEY_SHIFT, KEY_CTRL, KEY_ALT, KEY_SPACE, KEY_BKSP, KEY_CUU/CUD/CUR/CUL, KEY_PGUP, KEY_PGDN, KEY_HOME, KEY_END, KEY_INS, KEY_DEL, KEY_PAUSE, KEY_CAR, KEY_CAL, KEY_PLUS, KEY_MINUS, KEY_ENTER, KEY_0..KEY_9, KEY_A..KEY_Z. |
 | [`KEY_SENSE`](globals/key_sense.html) | Keyboard movement sensitivity (default 0.7). |
+| [`LIGHT_ANGLE`](globals/light_angle.html) | Direction (0..2pi) of the infinitely distant light source; ALBEDO textures reflect light from this direction. |
 | [`LIGHT_DIST`](globals/light_dist.html) | Distance where the shading range begins (default 10 Steps). |
+| [`LOAD_MODE`](globals/load_mode.html) | When 1, a LOAD or LEVEL instruction does not change the screen resolution (default 0). |
+| [`MAP_CENTERX`](globals/map_centerx.html) | Horizontal offset of the automap centre in steps (independent of MAP_SCALE), keeping the centre fixed. |
+| [`MAP_CENTERY`](globals/map_centery.html) | Vertical offset of the automap centre in steps (independent of MAP_SCALE), keeping the centre fixed. |
+| [`MAP_EDGE_X1`](globals/map_edge_x1.html) | Left limit of the automap display, in pixels from the screen's upper-left corner (default = screen size). |
+| [`MAP_EDGE_X2`](globals/map_edge_x2.html) | Right limit of the automap display, in pixels from the screen's upper-left corner. |
+| [`MAP_EDGE_Y1`](globals/map_edge_y1.html) | Top limit of the automap display, in pixels from the screen's upper-left corner. |
+| [`MAP_EDGE_Y2`](globals/map_edge_y2.html) | Bottom limit of the automap display, in pixels from the screen's upper-left corner. |
 | [`MAP_LAYER`](globals/map_layer.html) | Overlay layer the map appears on (0..16). |
 | [`MAP_MAXX`](globals/map_maxx.html) | Largest X coordinate of the map (read-only). |
 | [`MAP_MAXY`](globals/map_maxy.html) | Largest Y coordinate of the map (read-only). |
 | [`MAP_MINX`](globals/map_minx.html) | Smallest X coordinate of the map (read-only). |
 | [`MAP_MINY`](globals/map_miny.html) | Smallest Y coordinate of the map (read-only). |
 | [`MAP_MODE`](globals/map_mode.html) | Map display mode (0 off; >0 shows the map; the value 2 reveals all objects). |
+| [`MAP_OFFSX`](globals/map_offsx.html) | Horizontal offset (pixels, default 0) of the automap centre from the 3-D window centre. |
+| [`MAP_OFFSY`](globals/map_offsy.html) | Vertical offset (pixels, default 0) of the automap centre from the 3-D window centre. |
+| [`MAP_ROT`](globals/map_rot.html) | When 1, the automap rotates with the player angle like a radar display; only objects within CLIP_DIST are shown. |
 | [`MAP_SCALE`](globals/map_scale.html) | Map display scale relative to the 3D window (default 0.9; 1 = fits exactly). |
 | [`MAX`](globals/max.html) | Upper limit of the skill value. |
+| [`MAX_DIST`](globals/max_dist.html) | Distance of the farthest visible vertex within CLIP_DIST; useful for tuning region CLIP_DISTs. |
+| [`MICKEY_X`](globals/mickey_x.html) | Mouse movement in dots along X since the last frame; can drive MOUSE_X. |
+| [`MICKEY_Y`](globals/mickey_y.html) | Mouse movement in dots along Y since the last frame; can drive MOUSE_Y. |
 | [`MIN`](globals/min.html) | Lower limit of the skill value. |
 | [`MOTION_BLUR`](globals/motion_blur.html) | Motion-blur amount (0..1); lowers resolution during movement for smoother motion. |
+| [`MOUSE_ANGLE`](globals/mouse_angle.html) | Direction angle of the mouse pointer in the level (e.g. for DROP); computed from MOUSE_X and PLAYER_ANGLE, may be set directly. |
+| [`MOUSE_CALM`](globals/mouse_calm.html) | Maximum movement still treated as immobility for MOUSE_MOVING (default 3). |
 | [`MOUSE_LEFT`](globals/mouse_left.html) | State of the left mouse / joystick button 1 (0/1). |
 | [`MOUSE_MIDDLE`](globals/mouse_middle.html) | State of the middle mouse / joystick button 3. |
+| [`MOUSE_MOVING`](globals/mouse_moving.html) | 1 while the mouse is moving, 0 when it has been stationary for a quarter second. |
 | [`MOUSE_RIGHT`](globals/mouse_right.html) | State of the right mouse / joystick button 2. |
 | [`MOUSE_SENSE`](globals/mouse_sense.html) | Mouse movement sensitivity (default 1). |
+| [`MOUSE_TIME`](globals/mouse_time.html) | Time in ticks over which MOUSE_CALM is measured to determine MOUSE_MOVING (default 4). |
+| [`MOUSE_X`](globals/mouse_x.html) | Horizontal mouse-pointer position in pixels from the screen's upper-left corner; settable when the pointer is on. |
+| [`MOUSE_Y`](globals/mouse_y.html) | Vertical mouse-pointer position in pixels from the screen's upper-left corner; settable when the pointer is on. |
+| [`MOVE_ANGLE`](globals/move_angle.html) | Actual movement direction of the player. |
 | [`MOVE_MODE`](globals/move_mode.html) | Freezes movement/actions: 1 normal, 0.5 stop actors, 0 stop player+events, -0.5 stop global ticks. |
 | [`MUSIC_VOL`](globals/music_vol.html) | Music volume (0..1; 0 switches music off). |
 | [`NODE`](globals/node.html) | Current node number in multiplayer games (from the command line). |
@@ -65,6 +114,7 @@ Skills are numeric properties (like variables) belonging to the player and objec
 | [`PLAYER_ARC`](globals/player_arc.html) | Focal length / field of view in radians (0.2..2.0, default 1 ≈ 60°). |
 | [`PLAYER_CLIMB`](globals/player_climb.html) | Maximum step-up height when changing region (default 1.5 Steps). |
 | [`PLAYER_COS`](globals/player_cos.html) | Cosine of the player's view angle. |
+| [`PLAYER_DEPTH`](globals/player_depth.html) | Depth of an underwater BELOW region beneath the player, its ceiling matching the player region's floor. |
 | [`PLAYER_HGT`](globals/player_hgt.html) | Player feet height above/below the region floor (PLAYER_Z − PLAYER_SIZE − FLOOR_HGT). |
 | [`PLAYER_LIGHT`](globals/player_light.html) | Strength of the light the player carries (0..1). |
 | [`PLAYER_SIN`](globals/player_sin.html) | Sine of the player's view angle (for movement rules). |
@@ -97,12 +147,25 @@ Skills are numeric properties (like variables) belonging to the player and objec
 | [`SHOOT_X`](globals/shoot_x.html) | Horizontal SHOOT deviation from the 3D-window centre (-1..1). |
 | [`SHOOT_Y`](globals/shoot_y.html) | Vertical SHOOT deviation from the 3D-window centre (-1..1). |
 | [`SKILL`](globals/skill.html) | Defines a skill (TYPE, VAL, MIN, MAX). |
+| [`SKIP_FRAMES`](globals/skip_frames.html) | Number of frames (default 5) that invisible actors beyond their DIST skip between movements, to save rendering time. |
+| [`SKY_OFFS_X`](globals/sky_offs_x.html) | Horizontal shift of all sky textures in pixels (never negative); periodically increasing it gives a wandering-cloud effect. |
+| [`SKY_OFFS_Y`](globals/sky_offs_y.html) | Vertical shift of all sky textures in pixels. |
 | [`SLOPE_AHEAD`](globals/slope_ahead.html) | Floor slope in the view direction (height gain per Step). |
+| [`SLOPE_SIDE`](globals/slope_side.html) | Ascent of the region floor perpendicular to the player's line of sight (rise per step). |
+| [`SLOPE_X`](globals/slope_x.html) | Ascent of the region floor along the X axis (rise per step). |
+| [`SLOPE_Y`](globals/slope_y.html) | Ascent of the region floor along the Y axis (rise per step). |
 | [`SOUND_VOL`](globals/sound_vol.html) | Global sound-effect volume (0..1). |
 | [`STEPS`](globals/steps.html) | Increases with the distance the player walks. |
+| [`STR_LEN`](globals/str_len.html) | Number of characters of the STRING last entered through INKEY. |
+| [`SVDIST`](globals/svdist.html) | Critical vertical range (steps) within which a thing/actor sound is audible (default 0 = inactive). |
+| [`THING_DIST`](globals/thing_dist.html) | Ratio of a thing's CLIP_DIST to the wall CLIP_DIST (0..1, default 1). |
+| [`THING_WIDTH`](globals/thing_width.html) | Factor (default 1) the texture width of all things is multiplied by for collision detection. |
 | [`TICKS`](globals/ticks.html) | Increases by 1 every 1/16 second. |
 | [`TIME_CORR`](globals/time_corr.html) | Time-correction factor (1.0 at 16 fps; lower at higher fps). |
 | [`TIME_FAC`](globals/time_fac.html) | Reciprocal of TIME_CORR (higher on faster machines). |
+| [`TOUCH_DIST`](globals/touch_dist.html) | Maximum distance (default 100 steps) for triggering the texture mouse events TOUCH, IF_TOUCH, IF_RELEASE and IF_CLICK. |
+| [`TOUCH_MODE`](globals/touch_mode.html) | When 1 (default), the TOUCH texture string of a touched object is shown at the mouse pointer. |
+| [`TOUCH_STATE`](globals/touch_state.html) | 0 normally; 1 when the pointer is on a TOUCH-text object, 2 when on an IF_CLICK object, 3 when both. |
 | [`TYPE`](globals/type.html) | Skill kind: LOCAL, GLOBAL or PLAYER. GLOBAL skills survive level reloads; default LOCAL. |
 | [`VAL`](globals/val.html) | Initial value of the skill (default 0). |
 | [`WALK`](globals/walk.html) | Current deflection of the walking movement (-1..1). |

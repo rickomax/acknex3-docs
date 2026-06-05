@@ -3,7 +3,7 @@ layout: default
 title: "TEXTURE"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 26
+nav_order: 27
 ---
 
 # `TEXTURE` `Texture;`

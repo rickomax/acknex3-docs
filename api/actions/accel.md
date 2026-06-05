@@ -3,7 +3,7 @@ layout: default
 title: "ACCEL"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 1
+nav_order: 2
 ---
 
 # `ACCEL` `[Obj.]Key, Number/[Obj.]Key2;`

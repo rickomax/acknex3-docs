@@ -3,7 +3,7 @@ layout: default
 title: "PANELS"
 parent: Panels, Texts & Overlays
 grand_parent: API Reference
-nav_order: 11
+nav_order: 13
 ---
 
 # `PANELS` `Panel, …;`

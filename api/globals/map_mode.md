@@ -3,7 +3,7 @@ layout: default
 title: "MAP_MODE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 38
+nav_order: 74
 ---
 
 # `MAP_MODE` `(skill)`

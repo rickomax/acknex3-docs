@@ -3,7 +3,7 @@ layout: default
 title: "PLAYER_CLIMB"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 52
+nav_order: 101
 ---
 
 # `PLAYER_CLIMB` `(skill)`

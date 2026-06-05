@@ -3,7 +3,7 @@ layout: default
 title: "CYCLE"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 6
+nav_order: 9
 ---
 
 # `CYCLE` `n;`

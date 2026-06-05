@@ -3,7 +3,7 @@ layout: default
 title: "MAP_SCALE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 39
+nav_order: 78
 ---
 
 # `MAP_SCALE` `(skill)`

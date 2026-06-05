@@ -3,7 +3,7 @@ layout: default
 title: "IF_START"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 26
+nav_order: 41
 ---
 
 # `IF_START` `Action;`

@@ -3,7 +3,7 @@ layout: default
 title: "LOAD_INFO"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 30
+nav_order: 49
 ---
 
 # `LOAD_INFO` `"Text", Skill;`

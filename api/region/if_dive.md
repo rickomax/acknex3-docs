@@ -3,7 +3,7 @@ layout: default
 title: "IF_DIVE"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 18
+nav_order: 24
 ---
 
 # `IF_DIVE` `Action;`

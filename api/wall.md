@@ -25,6 +25,7 @@ Vertical Walls run along the connecting lines between two vertices and separate 
 | [`IF_FAR`](wall/if_far.html) | Triggered when the player moves away beyond the boundary distance (DIST). |
 | [`IF_HIT`](wall/if_hit.html) | Triggered when the wall is hit by SHOOT/EXPLODE or struck head-on by a flying object (see BULLET, FRAGILE). |
 | [`IF_NEAR`](wall/if_near.html) | Triggered when the player approaches the nearest wall vertex within the boundary distance (DIST); if no DIST, on every contact. |
+| [`IMPASSABLE`](wall/impassable.html) | Wall is impenetrable over its entire length and height even when invisible; combined with PASSABLE it stays passable for the player but not for actors. |
 | [`INVISIBLE`](wall/invisible.html) | Wall is invisible but still blocks the player. Same region must be on both sides. |
 | [`MAP_COLOR`](wall/map_color.html) | Mode (0..1, default 1) for drawing the wall on the map. 0 = not drawn. |
 | [`OFFSET_X`](wall/offset_x.html) | Shifts the wall texture left by the given number of pixels. Cannot be combined with the WED ALIGN function. |

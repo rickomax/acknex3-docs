@@ -3,7 +3,7 @@ layout: default
 title: "SIDES"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 13
+nav_order: 24
 ---
 
 # `SIDES` `Number;`

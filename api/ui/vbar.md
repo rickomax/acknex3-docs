@@ -3,7 +3,7 @@ layout: default
 title: "VBAR"
 parent: Panels, Texts & Overlays
 grand_parent: API Reference
-nav_order: 18
+nav_order: 21
 ---
 
 # `VBAR` `x,y,len,Bmap,fac,Skill;`

@@ -3,7 +3,7 @@ layout: default
 title: "DEBUG_MODE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 10
+nav_order: 29
 ---
 
 # `DEBUG_MODE` `(skill)`

@@ -3,7 +3,7 @@ layout: default
 title: "EXIT"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 12
+nav_order: 21
 ---
 
 # `EXIT` `["Text"/String];`

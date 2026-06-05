@@ -3,7 +3,7 @@ layout: default
 title: "EACH_SEC"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 9
+nav_order: 16
 ---
 
 # `EACH_SEC` `Action, …;`

@@ -3,7 +3,7 @@ layout: default
 title: "FRICTION"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 18
+nav_order: 40
 ---
 
 # `FRICTION` `(skill)`

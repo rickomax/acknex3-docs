@@ -3,7 +3,7 @@ layout: default
 title: "SCYCLES"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 11
+nav_order: 21
 ---
 
 # `SCYCLES` `Flag, …;`

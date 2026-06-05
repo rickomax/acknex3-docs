@@ -3,7 +3,7 @@ layout: default
 title: "PLACE"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 32
+nav_order: 59
 ---
 
 # `PLACE` `Object;`

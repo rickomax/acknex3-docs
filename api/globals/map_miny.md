@@ -3,7 +3,7 @@ layout: default
 title: "MAP_MINY"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 37
+nav_order: 73
 ---
 
 # `MAP_MINY` `(skill)`

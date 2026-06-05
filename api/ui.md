@@ -13,6 +13,8 @@ The user interface is built from control panels, text displays and overlays. Eac
 | Keyword | Summary |
 |:--------|:--------|
 | [`ABSPOS`](ui/abspos.html) | Overlay position is relative to the screen corner rather than the 3D-window corner. |
+| [`CENTER_X`](ui/center_x.html) | Centres a TEXT horizontally on POS_X (otherwise it is left-justified). |
+| [`CENTER_Y`](ui/center_y.html) | Centres a TEXT vertically on POS_Y (otherwise it is top-justified). |
 | [`DIGITS`](ui/digits.html) | Numeric display of skill×fac with len digits; negative len shows time h:m:s. |
 | [`FONT`](ui/font.html) | Character set used for the text or symbols. |
 | [`HBAR`](ui/hbar.html) | Horizontal bar gauge (counterpart of VBAR). |
@@ -27,6 +29,7 @@ The user interface is built from control panels, text displays and overlays. Eac
 | [`POS_X`](ui/pos_x.html) | X offset of the element's upper-left corner from the screen / panel origin. |
 | [`POS_Y`](ui/pos_y.html) | Y offset of the element's upper-left corner. |
 | [`REFRESH`](ui/refresh.html) | Regenerates the panel each frame (e.g. for scrolling text). Costly for large panels — prefer an OVERLAY. |
+| [`RELPOS`](ui/relpos.html) | Panel position (POS_X, POS_Y) is relative to the 3-D window's upper-left corner instead of the screen's; such panels are clipped to the window. |
 | [`STRING`](ui/string.html) | The text content (predefined string keyword); `\n` = line break, `\"` = quote; NULL = no text. |
 | [`TEXT`](ui/text.html) | Defines a text display inside the 3D window (messages, dialogue). |
 | [`VBAR`](ui/vbar.html) | Vertical bar gauge: the bitmap is shifted by skill×fac. Up to 16 bars per panel. |

@@ -3,7 +3,7 @@ layout: default
 title: "KEY_SENSE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 31
+nav_order: 59
 ---
 
 # `KEY_SENSE` `(skill)`

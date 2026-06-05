@@ -3,7 +3,7 @@ layout: default
 title: "BMAPS"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 3
+nav_order: 7
 ---
 
 # `BMAPS` `Bitmap1, Bitmap2, …;`

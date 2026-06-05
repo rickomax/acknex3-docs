@@ -3,7 +3,7 @@ layout: default
 title: "CEIL_HGT"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 2
+nav_order: 5
 ---
 
 # `CEIL_HGT` `Number;`
