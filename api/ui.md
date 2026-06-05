@@ -3,7 +3,7 @@ layout: default
 title: Panels, Texts & Overlays
 parent: API Reference
 has_children: true
-nav_order: 12
+nav_order: 6
 ---
 
 # Panels, Texts & Overlays

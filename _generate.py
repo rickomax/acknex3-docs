@@ -446,6 +446,9 @@ os.makedirs(API)
 
 total_kw = sum(len(c["kws"]) for c in CATS)
 
+# Object types (groups) are listed alphabetically by title.
+CATS.sort(key=lambda c: c["title"].lower())
+
 # Home
 write(os.path.join(ROOT, "index.md"),
  [("layout","home"),("title","Home"),("nav_order","1")],
@@ -460,9 +463,29 @@ with the official English ACKNEX **v3.8** and **v3.9** reference manuals.
 
 ---
 
-The [API Reference](api/) is split by **object type** (textures, walls, regions,
-actors, things, globals, actions, UI, …) and then by **keyword**. It currently
-documents **{len(CATS)}** object types and **{total_kw}** keywords.
+The [API Reference](api/) groups the **{total_kw}** keywords by **object type**
+(actions, actors, walls, regions, …), listed alphabetically. Prefer a single
+flat list? See the [Keywords A–Z](keywords/) index.
+""")
+
+# Alphabetical keyword index (ungrouped)
+all_kws = sorted(
+    ((k, c) for c in CATS for k in c["kws"]),
+    key=lambda pair: (pair[0]["name"].lower(), pair[1]["title"].lower()))
+arows = "\n".join(
+    f"| [`{k['name']}`](api/{c['slug']}/{slug(k['name'])}.html) "
+    f"| [{c['title']}](api/{c['slug']}.html) | {k['desc']} |"
+    for k, c in all_kws)
+write(os.path.join(ROOT, "keywords.md"),
+ [("layout","default"),("title","Keywords A–Z"),("nav_order","2")],
+ f"""# Keywords A–Z
+
+Every WDL keyword in a single alphabetical list, regardless of object type.
+There are **{total_kw}** keywords across **{len(CATS)}** object types.
+
+| Keyword | Object type | Summary |
+|:--------|:------------|:--------|
+{arows}
 """)
 
 # API index
@@ -470,10 +493,11 @@ rows = "\n".join(
     f"| [{c['title']}]({c['slug']}.html) | {len(c['kws'])} | {c['summary']} |"
     for c in CATS)
 write(os.path.join(API, "index.md"),
- [("layout","default"),("title","API Reference"),("nav_order","2"),("has_children","true")],
+ [("layout","default"),("title","API Reference"),("nav_order","3"),("has_children","true")],
  f"""# API Reference
 
-WDL keywords grouped by object type. Pick a type, then a keyword.
+WDL keywords grouped by object type (listed alphabetically). Pick a type, then a
+keyword — or browse the flat [Keywords A–Z](../keywords/) index.
 
 | Object type | Keywords | Summary |
 |:------------|:--------:|:--------|

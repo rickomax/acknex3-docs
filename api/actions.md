@@ -3,7 +3,7 @@ layout: default
 title: Actions & Instructions
 parent: API Reference
 has_children: true
-nav_order: 10
+nav_order: 1
 ---
 
 # Actions & Instructions

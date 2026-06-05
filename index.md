@@ -15,6 +15,6 @@ with the official English ACKNEX **v3.8** and **v3.9** reference manuals.
 
 ---
 
-The [API Reference](api/) is split by **object type** (textures, walls, regions,
-actors, things, globals, actions, UI, …) and then by **keyword**. It currently
-documents **13** object types and **308** keywords.
+The [API Reference](api/) groups the **308** keywords by **object type**
+(actions, actors, walls, regions, …), listed alphabetically. Prefer a single
+flat list? See the [Keywords A–Z](keywords/) index.
