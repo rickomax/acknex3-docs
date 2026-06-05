@@ -3,7 +3,7 @@ layout: default
 title: "VISIBLE"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 15
+nav_order: 26
 ---
 
 # `VISIBLE` `(flag)`

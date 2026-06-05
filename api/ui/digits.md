@@ -3,7 +3,7 @@ layout: default
 title: "DIGITS"
 parent: Panels, Texts & Overlays
 grand_parent: API Reference
-nav_order: 7
+nav_order: 2
 ---
 
 # `DIGITS` `x,y,len,Font,fac,Skill;`

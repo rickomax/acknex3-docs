@@ -3,7 +3,7 @@ layout: default
 title: "CYCLE"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 5
+nav_order: 2
 ---
 
 # `CYCLE` `n;`

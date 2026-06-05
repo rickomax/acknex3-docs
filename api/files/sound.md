@@ -3,7 +3,7 @@ layout: default
 title: "SOUND"
 parent: Files
 grand_parent: API Reference
-nav_order: 4
+nav_order: 6
 ---
 
 # `SOUND` `Keyword, <Filename>;`

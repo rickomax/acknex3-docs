@@ -3,7 +3,7 @@ layout: default
 title: "GOTO"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 13
+nav_order: 15
 ---
 
 # `GOTO` `Label;`

@@ -3,7 +3,7 @@ layout: default
 title: "ONESHOT"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 14
+nav_order: 8
 ---
 
 # `ONESHOT` `(flag)`

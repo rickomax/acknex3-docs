@@ -3,7 +3,7 @@ layout: default
 title: "PLAY_FLICFILE"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 23
+nav_order: 34
 ---
 
 # `PLAY_FLICFILE` `<Filename>;`

@@ -3,7 +3,7 @@ layout: default
 title: "FRAGILE"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 38
+nav_order: 13
 ---
 
 # `FRAGILE` `(flag)`

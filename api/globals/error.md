@@ -3,7 +3,7 @@ layout: default
 title: "ERROR"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 87
+nav_order: 11
 ---
 
 # `ERROR` `(skill)`

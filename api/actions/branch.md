@@ -3,7 +3,7 @@ layout: default
 title: "BRANCH"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 15
+nav_order: 6
 ---
 
 # `BRANCH` `Action;`

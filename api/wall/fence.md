@@ -3,7 +3,7 @@ layout: default
 title: "FENCE"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 31
+nav_order: 8
 ---
 
 # `FENCE` `(flag)`

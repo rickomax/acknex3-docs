@@ -3,7 +3,7 @@ layout: default
 title: "BLUR"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 18
+nav_order: 2
 ---
 
 # `BLUR` `Number;`

@@ -3,7 +3,7 @@ layout: default
 title: "FLIC"
 parent: Files
 grand_parent: API Reference
-nav_order: 6
+nav_order: 2
 ---
 
 # `FLIC` `Keyword, <Filename>;`

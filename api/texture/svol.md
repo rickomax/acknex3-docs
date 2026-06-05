@@ -3,7 +3,7 @@ layout: default
 title: "SVOL"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 12
+nav_order: 17
 ---
 
 # `SVOL` `Number;`

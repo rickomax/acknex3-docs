@@ -3,7 +3,7 @@ layout: default
 title: "KEY_F1...KEY_Z"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 77
+nav_order: 30
 ---
 
 # `KEY_F1...KEY_Z` `(skills)`

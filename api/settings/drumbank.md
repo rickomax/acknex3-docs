@@ -3,7 +3,7 @@ layout: default
 title: "DRUMBANK"
 parent: Predefined Settings
 grand_parent: API Reference
-nav_order: 5
+nav_order: 3
 ---
 
 # `DRUMBANK` `<Filename>;`

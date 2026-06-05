@@ -3,7 +3,7 @@ layout: default
 title: "PLAYER_WIDTH"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 26
+nav_order: 64
 ---
 
 # `PLAYER_WIDTH` `(skill)`

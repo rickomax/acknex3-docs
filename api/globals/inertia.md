@@ -3,7 +3,7 @@ layout: default
 title: "INERTIA"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 43
+nav_order: 26
 ---
 
 # `INERTIA` `(skill)`

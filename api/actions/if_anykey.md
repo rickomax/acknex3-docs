@@ -3,7 +3,7 @@ layout: default
 title: "IF_ANYKEY"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 44
+nav_order: 17
 ---
 
 # `IF_ANYKEY` `Action;`

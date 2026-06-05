@@ -3,7 +3,7 @@ layout: default
 title: "OVLYS"
 parent: Panels, Texts & Overlays
 grand_parent: API Reference
-nav_order: 14
+nav_order: 8
 ---
 
 # `OVLYS` `Ovly, …;`

@@ -3,7 +3,7 @@ layout: default
 title: "SHIFT_SENSE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 84
+nav_order: 78
 ---
 
 # `SHIFT_SENSE` `(skill)`

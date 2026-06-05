@@ -3,7 +3,7 @@ layout: default
 title: "FORCE_STRAFE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 79
+nav_order: 15
 ---
 
 # `FORCE_STRAFE` `(skill)`

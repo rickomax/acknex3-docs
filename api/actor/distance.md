@@ -3,7 +3,7 @@ layout: default
 title: "DISTANCE"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 19
+nav_order: 8
 ---
 
 # `DISTANCE` `Number;`

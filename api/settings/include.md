@@ -3,7 +3,7 @@ layout: default
 title: "INCLUDE"
 parent: Predefined Settings
 grand_parent: API Reference
-nav_order: 7
+nav_order: 5
 ---
 
 # `INCLUDE` `<Filename>;`

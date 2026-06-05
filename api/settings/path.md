@@ -3,7 +3,7 @@ layout: default
 title: "PATH"
 parent: Predefined Settings
 grand_parent: API Reference
-nav_order: 11
+nav_order: 9
 ---
 
 # `PATH` `<Dirname>;`

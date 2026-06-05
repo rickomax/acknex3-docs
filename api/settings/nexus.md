@@ -3,7 +3,7 @@ layout: default
 title: "NEXUS"
 parent: Predefined Settings
 grand_parent: API Reference
-nav_order: 2
+nav_order: 8
 ---
 
 # `NEXUS` `Number;`

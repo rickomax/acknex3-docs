@@ -3,7 +3,7 @@ layout: default
 title: "IF_TAST"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 42
+nav_order: 27
 ---
 
 # `IF_TAST` `Action;`

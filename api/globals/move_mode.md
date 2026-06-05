@@ -3,7 +3,7 @@ layout: default
 title: "MOVE_MODE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 13
+nav_order: 47
 ---
 
 # `MOVE_MODE` `(skill)`

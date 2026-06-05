@@ -3,7 +3,7 @@ layout: default
 title: "MOUSE_MIDDLE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 74
+nav_order: 44
 ---
 
 # `MOUSE_MIDDLE` `(skill)`

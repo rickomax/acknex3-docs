@@ -3,7 +3,7 @@ layout: default
 title: "MAP_COLOR"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 7
+nav_order: 15
 ---
 
 # `MAP_COLOR` `n;`

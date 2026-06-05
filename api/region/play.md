@@ -3,7 +3,7 @@ layout: default
 title: "PLAY"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 19
+nav_order: 21
 ---
 
 # `PLAY` `(flag)`

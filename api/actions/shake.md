@@ -3,7 +3,7 @@ layout: default
 title: "SHAKE"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 46
+nav_order: 43
 ---
 
 # `SHAKE` `Object;`

@@ -3,7 +3,7 @@ layout: default
 title: "STRING"
 parent: Panels, Texts & Overlays
 grand_parent: API Reference
-nav_order: 12
+nav_order: 16
 ---
 
 # `STRING` `String;`

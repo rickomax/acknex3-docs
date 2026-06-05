@@ -3,7 +3,7 @@ layout: default
 title: "SKILL1...SKILL8"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 18
+nav_order: 34
 ---
 
 # `SKILL1...SKILL8` `Number;`

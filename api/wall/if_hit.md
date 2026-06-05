@@ -3,7 +3,7 @@ layout: default
 title: "IF_HIT"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 15
+nav_order: 12
 ---
 
 # `IF_HIT` `Action;`

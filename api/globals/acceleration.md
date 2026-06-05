@@ -3,7 +3,7 @@ layout: default
 title: "ACCELERATION"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 58
+nav_order: 1
 ---
 
 # `ACCELERATION` `(skill)`
