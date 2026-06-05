@@ -2,7 +2,8 @@ title: ACKNEX / WDL Reference
 description: WDL (World Definition Language) reference for the ACKNEX 3D GameStudio engine
 theme: just-the-docs
 
-url: https://rickomax.github.io/acknex-docs
+url: https://rickomax.github.io
+baseurl: /acknex3-docs
 
 aux_links:
   Source repository: https://github.com/rickomax/acknex-book
