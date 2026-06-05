@@ -15,10 +15,7 @@ api/<type>/<kw>.md    One keyword page
 
 The **API Reference** is split first by **object type** (textures, walls,
 regions, actors, things, ways, globals/skills, actions, panels, palettes,
-files, settings, synonyms) and then by **keyword**. Every keyword page carries
-an _availability_ note: whether it comes from the 1995 book, the newer manuals,
-or both. Keywords removed in newer versions (e.g. `INV_DIST`, `SLIDEDOOR`,
-`ACTIVE_REGTICKS`) are flagged.
+files, settings, synonyms) and then by **keyword**.
 
 ## Building locally
 
