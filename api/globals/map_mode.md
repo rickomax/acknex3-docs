@@ -1,0 +1,15 @@
+---
+layout: default
+title: "MAP_MODE"
+parent: Globals & Predefined Skills
+grand_parent: API Reference
+nav_order: 19
+---
+
+# `MAP_MODE` `(skill)`
+
+Map display mode (0 off; >0 shows the map; the value 2 reveals all objects).
+
+> **Note:** The 1995 book states the range as 0..1, but 2 is a valid value.
+
+_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

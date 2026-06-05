@@ -1,8 +1,10 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: ACKNEX / WDL Reference
+description: WDL (World Definition Language) reference for the ACKNEX 3D GameStudio engine
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://rickomax.github.io/acknex-docs
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Source repository: https://github.com/rickomax/acknex-book
+
+color_scheme: dark
