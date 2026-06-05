@@ -8,7 +8,7 @@ has_children: true
 # API Reference
 
 WDL keywords grouped by object type (listed alphabetically). Pick a type, then a
-keyword — or browse the flat [Keywords A–Z](../keywords/) index.
+keyword — or browse the flat [Keywords A–Z](../keywords.html) index.
 
 | Object type | Keywords | Summary |
 |:------------|:--------:|:--------|
