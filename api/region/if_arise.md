@@ -9,5 +9,3 @@ nav_order: 24
 # `IF_ARISE` `Action;`
 
 Triggered when the player's eye height reaches or exceeds the ceiling height.
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

@@ -9,5 +9,3 @@ nav_order: 97
 # `HIT_MINDIST` `(skill)`
 
 Distance to the nearest object hit by EXPLODE (0 if none in range).
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

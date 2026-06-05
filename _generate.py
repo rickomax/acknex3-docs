@@ -20,18 +20,6 @@ def write(path, fm, body):
         f.write("---\n\n")
         f.write(body.rstrip() + "\n")
 
-# Availability badge text
-BADGE = {
-    "old":  "_Availability: WDL (1995 book)._",
-    "both": "_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._",
-    "new":  "_Availability: ACKNEX v3.8 / v3.9 (not in the 1995 book)._",
-}
-def avail_line(src, note=None):
-    line = BADGE.get(src, "")
-    if note:
-        line = line[:-1] + " " + note + "_" if line.endswith("_") else note
-        line = BADGE.get(src, "")[:-1] + " — " + note + "_"
-    return line
 
 # ---- Data model ----------------------------------------------------------
 # Each category: (slug, title, nav, summary, intro_md, [keywords])
@@ -475,9 +463,6 @@ with the official English ACKNEX **v3.8** and **v3.9** reference manuals.
 The [API Reference](api/) is split by **object type** (textures, walls, regions,
 actors, things, globals, actions, UI, …) and then by **keyword**. It currently
 documents **{len(CATS)}** object types and **{total_kw}** keywords.
-
-Each keyword page carries an _availability_ note indicating whether it comes from
-the 1995 book, the newer manuals, or both.
 """)
 
 # API index
@@ -502,8 +487,7 @@ for ci, c in enumerate(CATS, start=1):
     for ki, k in enumerate(c["kws"], start=1):
         ks = slug(k["name"])
         sig = f" `{k['sig']}`" if k['sig'] else ""
-        tag = "removed" if k.get("removed") else k["src"]
-        krows.append(f"| [`{k['name']}`]({c['slug']}/{ks}.html) | {k['src']} | {k['desc']} |")
+        krows.append(f"| [`{k['name']}`]({c['slug']}/{ks}.html) | {k['desc']} |")
     ktable = "\n".join(krows)
     write(os.path.join(API, f"{c['slug']}.md"),
      [("layout","default"),("title",c["title"]),("parent","API Reference"),
@@ -512,8 +496,8 @@ for ci, c in enumerate(CATS, start=1):
 
 {c['intro']}
 
-| Keyword | Source | Summary |
-|:--------|:------:|:--------|
+| Keyword | Summary |
+|:--------|:--------|
 {ktable}
 """)
     # keyword pages
@@ -523,7 +507,6 @@ for ci, c in enumerate(CATS, start=1):
         body = f"# `{k['name']}`{sig}\n\n{k['desc']}\n"
         if k.get("note"):
             body += f"\n> **Note:** {k['note']}\n"
-        body += f"\n{BADGE[k['src']]}\n"
         title = k["name"].replace('"',"'")
         write(os.path.join(API, c["slug"], f"{ks}.md"),
          [("layout","default"),("title",f"\"{title}\""),("parent",c["title"]),

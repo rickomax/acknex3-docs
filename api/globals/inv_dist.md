@@ -11,5 +11,3 @@ nav_order: 49
 Reciprocal of the SHOOT hit distance.
 
 > **Note:** Removed in newer versions (use HIT_DIST / HIT_X / HIT_Y).
-
-_Availability: WDL (1995 book)._

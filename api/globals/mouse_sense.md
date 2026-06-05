@@ -11,5 +11,3 @@ nav_order: 85
 Mouse movement sensitivity (default 1).
 
 > **Note:** The 1995 book misprints this as `MOUS_SENSE`.
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

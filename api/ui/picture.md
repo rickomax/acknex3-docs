@@ -9,5 +9,3 @@ nav_order: 8
 # `PICTURE` `x,y,Texture,fac,Skill;`
 
 Animated picture display; the texture side is chosen by skill×fac. Up to 4 per panel.
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

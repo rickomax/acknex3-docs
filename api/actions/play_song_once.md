@@ -9,5 +9,3 @@ nav_order: 21
 # `PLAY_SONG_ONCE` `Music, Volume;`
 
 Like PLAY_SONG but plays once; afterwards the background music ends.
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

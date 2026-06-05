@@ -10,53 +10,53 @@ nav_order: 10
 
 Actions give objects the behaviour of linear automata. An action is a list of instructions executed one after another; many actions can run at once. Below are the ACTION keyword, the instructions usable inside actions, and the global/event keywords that trigger actions.
 
-| Keyword | Source | Summary |
-|:--------|:------:|:--------|
-| [`ACTION`](actions/action.html) | both | Defines an action — a list of the instructions below. |
-| [`SET`](actions/set.html) | both | Assigns a new value or keyword to any keyword/skill. Assigning NULL switches actions off; for FLAG keywords, 0 clears and 1 sets. |
-| [`ADD`](actions/add.html) | both | Increases a keyword value by a number or skill (negative decreases). |
-| [`ADDT`](actions/addt.html) | both | Like ADD but time-corrected (value multiplied by TIME_CORR). For constant-speed changes (e.g. lifts). |
-| [`ACCEL`](actions/accel.html) | both | Adds like an acceleration; uses skills INERTIA and FRICTION. |
-| [`RULE`](actions/rule.html) | both | Assigns an arithmetic expression (numbers, skills, parentheses, + - * /) to a skill; clamped by MIN/MAX. Avoid factors < 0.01. |
-| [`IF_ABOVE`](actions/if_above.html) | both | Executes the next instruction only if the value is greater than the number/keyword. |
-| [`IF_BELOW`](actions/if_below.html) | both | Executes the next instruction only if the value is less than the number/keyword. |
-| [`IF_EQUAL`](actions/if_equal.html) | both | Executes the next instruction only if the value is exactly equal (integers only). |
-| [`IF_MIN`](actions/if_min.html) | both | Executes the next instruction only if the skill has reached its minimum. |
-| [`IF_MAX`](actions/if_max.html) | both | Executes the next instruction only if the skill has reached its maximum. |
-| [`SKIP`](actions/skip.html) | both | Relative jump: skips the given number of instructions (negative = backward). |
-| [`GOTO`](actions/goto.html) | both | Absolute jump to a target label (a keyword followed by a colon). |
-| [`CALL`](actions/call.html) | both | Runs the given action, then continues with the next instruction. |
-| [`BRANCH`](actions/branch.html) | both | Aborts the current action and runs the given action immediately. |
-| [`END`](actions/end.html) | both | Ends the action. |
-| [`WAIT`](actions/wait.html) | both | (EACH_TICK actions) Pauses the action for the given number of image cycles. |
-| [`WAITT`](actions/waitt.html) | both | Pauses the action for the given number of Ticks (fixed time). |
-| [`PLAY_SOUND`](actions/play_sound.html) | both | Starts a sound at the given volume (0..1 or skill). |
-| [`PLAY_SONG`](actions/play_song.html) | both | Starts a new background song (volume 0 switches music off). |
-| [`PLAY_SONG_ONCE`](actions/play_song_once.html) | both | Like PLAY_SONG but plays once; afterwards the background music ends. |
-| [`PLAY_FLIC`](actions/play_flic.html) | both | Plays a full-screen animation. In the 1995 engine, image build and EACH_TICK stop during play (start a song one frame earlier); newer engines keep EACH_TICK running and expose FLIC_FRAME. |
-| [`PLAY_FLICFILE`](actions/play_flicfile.html) | both | Like PLAY_FLIC but streams from disk and frees the memory afterwards. |
-| [`FADE_PAL`](actions/fade_pal.html) | both | Cross-fades the current palette toward another (factor 0..1; 1 completes the change). |
-| [`DROP`](actions/drop.html) | both | Places a Thing/Actor in the player's view direction at distance DIST (same region as the player). |
-| [`PLACE`](actions/place.html) | both | Applies new vertex positions to a wall/thing/actor from its X,Y / X1..Z2 parameters (e.g. to shift or rotate walls). |
-| [`SHOOT`](actions/shoot.html) | both | Triggers IF_HIT on the nearest object in view (using SHOOT_FAC/RANGE/X/Y); sets HIT_DIST and RESULT. Also opens nearby switches/doors. |
-| [`EXPLODE`](actions/explode.html) | both | Triggers IF_HIT on all FRAGILE objects within SHOOT_RANGE of the named actor; sets HIT_MINDIST. |
-| [`SAVE`](actions/save.html) | both | Saves the game under a name + number (.SAV) in SAVEDIR. |
-| [`LOAD`](actions/load.html) | both | Loads a previously saved game. |
-| [`SAVE_INFO`](actions/save_info.html) | both | Like SAVE but stores only the GLOBAL skills. |
-| [`LOAD_INFO`](actions/load_info.html) | both | Like LOAD but loads only the GLOBAL skills. |
-| [`MAP`](actions/map.html) | both | Loads a new topography (.WMP) and resets player/actors to start positions (professional version). |
-| [`LEVEL`](actions/level.html) | both | Loads a new level (WDL + topography) and runs its start action (professional version). |
-| [`EXIT`](actions/exit.html) | both | Ends the game and returns to DOS, optionally printing a message. |
-| [`EACH_TICK`](actions/each_tick.html) | both | Global list of up to 16 actions run after each image build. |
-| [`EACH_SEC`](actions/each_sec.html) | both | Global list of up to 16 actions run once per second. |
-| [`IF_START`](actions/if_start.html) | both | Action run at game start (palette changes, title animations, songs…). |
-| [`IF_LEFT`](actions/if_left.html) | both | Run on left mouse button / joystick button 1. |
-| [`IF_MIDDLE`](actions/if_middle.html) | both | Run on middle mouse button / joystick button 3. |
-| [`IF_RIGHT`](actions/if_right.html) | both | Run on right mouse button / joystick button 2. |
-| [`IF_TAST`](actions/if_tast.html) | both | Run when any key is pressed. (v3.8 documents the equivalent as IF_ANYKEY.) |
-| [`IF_F1...`](actions/if_f1.html) | both | Run on the given key. Family: IF_F1..IF_F12, IF_ESC, IF_TAB, IF_CTRL, IF_ALT, IF_SPACE, IF_BKSP, IF_CUU/CUD/CUR/CUL, IF_PGUP, IF_PGDN, IF_HOME, IF_END, IF_INS, IF_DEL, IF_PAUSE, IF_CAR, IF_CAL, IF_ENTER, IF_0..IF_9, IF_A..IF_Z. |
-| [`IF_ANYKEY`](actions/if_anykey.html) | new | Run when any key is pressed (newer name; equivalent to the 1995 IF_TAST). |
-| [`PUSH`](actions/push.html) | new | Triggers IF_HIT on the closest visible object within the given distance (open doors, start lifts). |
-| [`SHAKE`](actions/shake.html) | new | Tells an object its position/size changed; required after directly setting coordinates. |
-| [`STOP_FLIC`](actions/stop_flic.html) | new | Stops the currently playing flic. |
-| [`BEEP`](actions/beep.html) | new | Plays a short note sequence on the PC speaker (handy during development). |
+| Keyword | Summary |
+|:--------|:--------|
+| [`ACTION`](actions/action.html) | Defines an action — a list of the instructions below. |
+| [`SET`](actions/set.html) | Assigns a new value or keyword to any keyword/skill. Assigning NULL switches actions off; for FLAG keywords, 0 clears and 1 sets. |
+| [`ADD`](actions/add.html) | Increases a keyword value by a number or skill (negative decreases). |
+| [`ADDT`](actions/addt.html) | Like ADD but time-corrected (value multiplied by TIME_CORR). For constant-speed changes (e.g. lifts). |
+| [`ACCEL`](actions/accel.html) | Adds like an acceleration; uses skills INERTIA and FRICTION. |
+| [`RULE`](actions/rule.html) | Assigns an arithmetic expression (numbers, skills, parentheses, + - * /) to a skill; clamped by MIN/MAX. Avoid factors < 0.01. |
+| [`IF_ABOVE`](actions/if_above.html) | Executes the next instruction only if the value is greater than the number/keyword. |
+| [`IF_BELOW`](actions/if_below.html) | Executes the next instruction only if the value is less than the number/keyword. |
+| [`IF_EQUAL`](actions/if_equal.html) | Executes the next instruction only if the value is exactly equal (integers only). |
+| [`IF_MIN`](actions/if_min.html) | Executes the next instruction only if the skill has reached its minimum. |
+| [`IF_MAX`](actions/if_max.html) | Executes the next instruction only if the skill has reached its maximum. |
+| [`SKIP`](actions/skip.html) | Relative jump: skips the given number of instructions (negative = backward). |
+| [`GOTO`](actions/goto.html) | Absolute jump to a target label (a keyword followed by a colon). |
+| [`CALL`](actions/call.html) | Runs the given action, then continues with the next instruction. |
+| [`BRANCH`](actions/branch.html) | Aborts the current action and runs the given action immediately. |
+| [`END`](actions/end.html) | Ends the action. |
+| [`WAIT`](actions/wait.html) | (EACH_TICK actions) Pauses the action for the given number of image cycles. |
+| [`WAITT`](actions/waitt.html) | Pauses the action for the given number of Ticks (fixed time). |
+| [`PLAY_SOUND`](actions/play_sound.html) | Starts a sound at the given volume (0..1 or skill). |
+| [`PLAY_SONG`](actions/play_song.html) | Starts a new background song (volume 0 switches music off). |
+| [`PLAY_SONG_ONCE`](actions/play_song_once.html) | Like PLAY_SONG but plays once; afterwards the background music ends. |
+| [`PLAY_FLIC`](actions/play_flic.html) | Plays a full-screen animation. In the 1995 engine, image build and EACH_TICK stop during play (start a song one frame earlier); newer engines keep EACH_TICK running and expose FLIC_FRAME. |
+| [`PLAY_FLICFILE`](actions/play_flicfile.html) | Like PLAY_FLIC but streams from disk and frees the memory afterwards. |
+| [`FADE_PAL`](actions/fade_pal.html) | Cross-fades the current palette toward another (factor 0..1; 1 completes the change). |
+| [`DROP`](actions/drop.html) | Places a Thing/Actor in the player's view direction at distance DIST (same region as the player). |
+| [`PLACE`](actions/place.html) | Applies new vertex positions to a wall/thing/actor from its X,Y / X1..Z2 parameters (e.g. to shift or rotate walls). |
+| [`SHOOT`](actions/shoot.html) | Triggers IF_HIT on the nearest object in view (using SHOOT_FAC/RANGE/X/Y); sets HIT_DIST and RESULT. Also opens nearby switches/doors. |
+| [`EXPLODE`](actions/explode.html) | Triggers IF_HIT on all FRAGILE objects within SHOOT_RANGE of the named actor; sets HIT_MINDIST. |
+| [`SAVE`](actions/save.html) | Saves the game under a name + number (.SAV) in SAVEDIR. |
+| [`LOAD`](actions/load.html) | Loads a previously saved game. |
+| [`SAVE_INFO`](actions/save_info.html) | Like SAVE but stores only the GLOBAL skills. |
+| [`LOAD_INFO`](actions/load_info.html) | Like LOAD but loads only the GLOBAL skills. |
+| [`MAP`](actions/map.html) | Loads a new topography (.WMP) and resets player/actors to start positions (professional version). |
+| [`LEVEL`](actions/level.html) | Loads a new level (WDL + topography) and runs its start action (professional version). |
+| [`EXIT`](actions/exit.html) | Ends the game and returns to DOS, optionally printing a message. |
+| [`EACH_TICK`](actions/each_tick.html) | Global list of up to 16 actions run after each image build. |
+| [`EACH_SEC`](actions/each_sec.html) | Global list of up to 16 actions run once per second. |
+| [`IF_START`](actions/if_start.html) | Action run at game start (palette changes, title animations, songs…). |
+| [`IF_LEFT`](actions/if_left.html) | Run on left mouse button / joystick button 1. |
+| [`IF_MIDDLE`](actions/if_middle.html) | Run on middle mouse button / joystick button 3. |
+| [`IF_RIGHT`](actions/if_right.html) | Run on right mouse button / joystick button 2. |
+| [`IF_TAST`](actions/if_tast.html) | Run when any key is pressed. (v3.8 documents the equivalent as IF_ANYKEY.) |
+| [`IF_F1...`](actions/if_f1.html) | Run on the given key. Family: IF_F1..IF_F12, IF_ESC, IF_TAB, IF_CTRL, IF_ALT, IF_SPACE, IF_BKSP, IF_CUU/CUD/CUR/CUL, IF_PGUP, IF_PGDN, IF_HOME, IF_END, IF_INS, IF_DEL, IF_PAUSE, IF_CAR, IF_CAL, IF_ENTER, IF_0..IF_9, IF_A..IF_Z. |
+| [`IF_ANYKEY`](actions/if_anykey.html) | Run when any key is pressed (newer name; equivalent to the 1995 IF_TAST). |
+| [`PUSH`](actions/push.html) | Triggers IF_HIT on the closest visible object within the given distance (open doors, start lifts). |
+| [`SHAKE`](actions/shake.html) | Tells an object its position/size changed; required after directly setting coordinates. |
+| [`STOP_FLIC`](actions/stop_flic.html) | Stops the currently playing flic. |
+| [`BEEP`](actions/beep.html) | Plays a short note sequence on the PC speaker (handy during development). |

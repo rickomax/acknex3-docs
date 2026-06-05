@@ -9,5 +9,3 @@ nav_order: 94
 # `SHOOT_SECTOR` `(skill)`
 
 Angular sector an actor uses for SHOOT (default 2π).
-
-_Availability: ACKNEX v3.8 / v3.9 (not in the 1995 book)._
