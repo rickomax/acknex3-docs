@@ -3,7 +3,7 @@ layout: default
 title: "IF_LEAVE"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 20
+nav_order: 26
 ---
 
 # `IF_LEAVE` `Action;`

@@ -3,7 +3,7 @@ layout: default
 title: "RANDOM"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 9
+nav_order: 17
 ---
 
 # `RANDOM` `Number;`

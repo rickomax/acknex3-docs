@@ -3,7 +3,7 @@ layout: default
 title: "ADDT"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 4
+nav_order: 7
 ---
 
 # `ADDT` `[Obj.]Key, Number/[Obj.]Key2;`

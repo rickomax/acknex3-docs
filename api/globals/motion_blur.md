@@ -3,7 +3,7 @@ layout: default
 title: "MOTION_BLUR"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 42
+nav_order: 84
 ---
 
 # `MOTION_BLUR` `(skill)`

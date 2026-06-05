@@ -3,7 +3,7 @@ layout: default
 title: "PLAYER_SPEED"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 58
+nav_order: 108
 ---
 
 # `PLAYER_SPEED` `(skill)`

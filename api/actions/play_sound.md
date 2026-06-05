@@ -3,7 +3,7 @@ layout: default
 title: "PLAY_SOUND"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 37
+nav_order: 65
 ---
 
 # `PLAY_SOUND` `Sound, Volume;`

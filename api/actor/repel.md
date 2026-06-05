@@ -3,7 +3,7 @@ layout: default
 title: "REPEL"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 29
+nav_order: 35
 ---
 
 # `REPEL` `(target)`

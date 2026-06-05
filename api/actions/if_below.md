@@ -3,7 +3,7 @@ layout: default
 title: "IF_BELOW"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 18
+nav_order: 30
 ---
 
 # `IF_BELOW` `[Obj.]Key, Number/[Obj.]Key2;`

@@ -3,7 +3,7 @@ layout: default
 title: "PLAY_SONG_ONCE"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 36
+nav_order: 64
 ---
 
 # `PLAY_SONG_ONCE` `Music, Volume;`

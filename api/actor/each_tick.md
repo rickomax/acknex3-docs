@@ -3,7 +3,7 @@ layout: default
 title: "EACH_TICK"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 11
+nav_order: 13
 ---
 
 # `EACH_TICK` `Action;`

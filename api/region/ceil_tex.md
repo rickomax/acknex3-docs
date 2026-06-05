@@ -3,7 +3,7 @@ layout: default
 title: "CEIL_TEX"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 6
+nav_order: 9
 ---
 
 # `CEIL_TEX` `Texture;`

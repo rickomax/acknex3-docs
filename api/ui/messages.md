@@ -3,7 +3,7 @@ layout: default
 title: "MESSAGES"
 parent: Panels, Texts & Overlays
 grand_parent: API Reference
-nav_order: 6
+nav_order: 8
 ---
 
 # `MESSAGES` `Text, …;`

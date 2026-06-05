@@ -3,7 +3,7 @@ layout: default
 title: "TEXT"
 parent: Panels, Texts & Overlays
 grand_parent: API Reference
-nav_order: 17
+nav_order: 20
 ---
 
 # `TEXT` `Keyword { ... };`

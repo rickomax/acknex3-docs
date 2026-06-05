@@ -3,7 +3,7 @@ layout: default
 title: "TEXTURE"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 39
+nav_order: 47
 ---
 
 # `TEXTURE` `Texture;`

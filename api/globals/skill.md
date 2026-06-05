@@ -3,7 +3,7 @@ layout: default
 title: "SKILL"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 85
+nav_order: 135
 ---
 
 # `SKILL` `Keyword { ... };`

@@ -3,7 +3,7 @@ layout: default
 title: "IF_EQUAL"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 19
+nav_order: 31
 ---
 
 # `IF_EQUAL` `[Obj.]Key, Number/[Obj.]Key2;`

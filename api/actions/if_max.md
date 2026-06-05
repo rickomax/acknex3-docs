@@ -3,7 +3,7 @@ layout: default
 title: "IF_MAX"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 22
+nav_order: 35
 ---
 
 # `IF_MAX` `Skill;`

@@ -3,7 +3,7 @@ layout: default
 title: "IF_HIT"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 19
+nav_order: 21
 ---
 
 # `IF_HIT` `Action;`

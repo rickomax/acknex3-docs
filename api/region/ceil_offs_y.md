@@ -3,7 +3,7 @@ layout: default
 title: "CEIL_OFFS_Y"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 5
+nav_order: 8
 ---
 
 # `CEIL_OFFS_Y` `Number;`

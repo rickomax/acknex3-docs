@@ -3,7 +3,7 @@ layout: default
 title: "PLAYER_ANGLE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 50
+nav_order: 99
 ---
 
 # `PLAYER_ANGLE` `(skill)`

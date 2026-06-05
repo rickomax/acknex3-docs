@@ -3,7 +3,7 @@ layout: default
 title: "TIME_CORR"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 90
+nav_order: 150
 ---
 
 # `TIME_CORR` `(skill)`

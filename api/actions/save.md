@@ -3,7 +3,7 @@ layout: default
 title: "SAVE"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 40
+nav_order: 72
 ---
 
 # `SAVE` `"Text", Skill;`

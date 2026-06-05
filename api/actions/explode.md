@@ -3,7 +3,7 @@ layout: default
 title: "EXPLODE"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 13
+nav_order: 23
 ---
 
 # `EXPLODE` `Object;`

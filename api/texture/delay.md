@@ -3,7 +3,7 @@ layout: default
 title: "DELAY"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 6
+nav_order: 11
 ---
 
 # `DELAY` `Number, …;`
