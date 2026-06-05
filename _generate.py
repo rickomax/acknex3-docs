@@ -502,9 +502,11 @@ keyword — or browse the flat [Keywords A–Z](../keywords.html) index.
 
 # Categories + keywords
 for ci, c in enumerate(CATS, start=1):
+    # keywords are listed alphabetically within each group
+    kws = sorted(c["kws"], key=lambda k: k["name"].lower())
     # category page
     krows = []
-    for ki, k in enumerate(c["kws"], start=1):
+    for ki, k in enumerate(kws, start=1):
         ks = slug(k["name"])
         sig = f" `{k['sig']}`" if k['sig'] else ""
         krows.append(f"| [`{k['name']}`]({c['slug']}/{ks}.html) | {k['desc']} |")
@@ -521,7 +523,7 @@ for ci, c in enumerate(CATS, start=1):
 {ktable}
 """)
     # keyword pages
-    for ki, k in enumerate(c["kws"], start=1):
+    for ki, k in enumerate(kws, start=1):
         ks = slug(k["name"])
         sig = f" `{k['sig']}`" if k['sig'] else ""
         body = f"# `{k['name']}`{sig}\n\n{k['desc']}\n"

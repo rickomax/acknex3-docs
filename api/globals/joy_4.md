@@ -3,7 +3,7 @@ layout: default
 title: "JOY_4"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 76
+nav_order: 28
 ---
 
 # `JOY_4` `(skill)`

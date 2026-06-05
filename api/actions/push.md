@@ -3,7 +3,7 @@ layout: default
 title: "PUSH"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 45
+nav_order: 38
 ---
 
 # `PUSH` `Number/Skill;`

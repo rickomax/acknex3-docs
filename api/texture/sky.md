@@ -3,7 +3,7 @@ layout: default
 title: "SKY"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 15
+nav_order: 14
 ---
 
 # `SKY` `(flag)`

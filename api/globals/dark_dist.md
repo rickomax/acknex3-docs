@@ -3,7 +3,7 @@ layout: default
 title: "DARK_DIST"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 25
+nav_order: 9
 ---
 
 # `DARK_DIST` `(skill)`

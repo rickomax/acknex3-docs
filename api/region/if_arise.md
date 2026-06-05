@@ -3,7 +3,7 @@ layout: default
 title: "IF_ARISE"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 24
+nav_order: 17
 ---
 
 # `IF_ARISE` `Action;`

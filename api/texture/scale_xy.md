@@ -3,7 +3,7 @@ layout: default
 title: "SCALE_XY"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 2
+nav_order: 10
 ---
 
 # `SCALE_XY` `x, y;`

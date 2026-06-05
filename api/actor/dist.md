@@ -3,7 +3,7 @@ layout: default
 title: "DIST"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 17
+nav_order: 7
 ---
 
 # `DIST` `Number;`

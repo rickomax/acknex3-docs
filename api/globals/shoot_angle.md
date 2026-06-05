@@ -3,7 +3,7 @@ layout: default
 title: "SHOOT_ANGLE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 93
+nav_order: 79
 ---
 
 # `SHOOT_ANGLE` `(skill)`

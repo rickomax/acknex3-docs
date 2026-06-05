@@ -3,7 +3,7 @@ layout: default
 title: "AMBIENT"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 10
+nav_order: 1
 ---
 
 # `AMBIENT` `Number;`

@@ -3,7 +3,7 @@ layout: default
 title: "INVISIBLE"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 31
+nav_order: 21
 ---
 
 # `INVISIBLE` `(flag)`

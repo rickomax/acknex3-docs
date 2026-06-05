@@ -3,7 +3,7 @@ layout: default
 title: "PLAY_FLIC"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 22
+nav_order: 33
 ---
 
 # `PLAY_FLIC` `Flic;`

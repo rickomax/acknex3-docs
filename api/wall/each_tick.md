@@ -3,7 +3,7 @@ layout: default
 title: "EACH_TICK"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 17
+nav_order: 6
 ---
 
 # `EACH_TICK` `Action;`

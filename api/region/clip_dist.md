@@ -3,7 +3,7 @@ layout: default
 title: "CLIP_DIST"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 11
+nav_order: 7
 ---
 
 # `CLIP_DIST` `Number;`

@@ -3,7 +3,7 @@ layout: default
 title: "ABSPOS"
 parent: Panels, Texts & Overlays
 grand_parent: API Reference
-nav_order: 15
+nav_order: 1
 ---
 
 # `ABSPOS` `(FLAGS ABSPOS;)`

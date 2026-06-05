@@ -3,7 +3,7 @@ layout: default
 title: "PASSABLE"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 19
+nav_order: 18
 ---
 
 # `PASSABLE` `(flag)`

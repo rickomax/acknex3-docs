@@ -3,7 +3,7 @@ layout: default
 title: "OFFSET_Y"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 4
+nav_order: 17
 ---
 
 # `OFFSET_Y` `Number;`

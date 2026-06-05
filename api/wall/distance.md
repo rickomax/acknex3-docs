@@ -3,7 +3,7 @@ layout: default
 title: "DISTANCE"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 10
+nav_order: 4
 ---
 
 # `DISTANCE` `Number;`

@@ -3,7 +3,7 @@ layout: default
 title: "FRAGILE"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 27
+nav_order: 10
 ---
 
 # `FRAGILE` `(flag)`

@@ -3,7 +3,7 @@ layout: default
 title: "IF_LEFT"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 39
+nav_order: 21
 ---
 
 # `IF_LEFT` `Action;`

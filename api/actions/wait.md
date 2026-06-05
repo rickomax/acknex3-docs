@@ -3,7 +3,7 @@ layout: default
 title: "WAIT"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 17
+nav_order: 47
 ---
 
 # `WAIT` `Number/Skill;`

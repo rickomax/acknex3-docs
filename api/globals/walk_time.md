@@ -3,7 +3,7 @@ layout: default
 title: "WALK_TIME"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 30
+nav_order: 96
 ---
 
 # `WALK_TIME` `(skill)`

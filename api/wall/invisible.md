@@ -3,7 +3,7 @@ layout: default
 title: "INVISIBLE"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 18
+nav_order: 14
 ---
 
 # `INVISIBLE` `(flag)`

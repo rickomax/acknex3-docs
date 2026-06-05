@@ -3,7 +3,7 @@ layout: default
 title: "HIT_MINDIST"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 97
+nav_order: 20
 ---
 
 # `HIT_MINDIST` `(skill)`

@@ -3,7 +3,7 @@ layout: default
 title: "EACH_TICK"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 26
+nav_order: 9
 ---
 
 # `EACH_TICK` `Action;`

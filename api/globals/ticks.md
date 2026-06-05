@@ -3,7 +3,7 @@ layout: default
 title: "TICKS"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 70
+nav_order: 89
 ---
 
 # `TICKS` `(skill)`

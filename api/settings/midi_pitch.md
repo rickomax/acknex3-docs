@@ -3,7 +3,7 @@ layout: default
 title: "MIDI_PITCH"
 parent: Predefined Settings
 grand_parent: API Reference
-nav_order: 6
+nav_order: 7
 ---
 
 # `MIDI_PITCH` `Number;`

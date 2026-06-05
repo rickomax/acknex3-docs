@@ -3,7 +3,7 @@ layout: default
 title: "PLAYER_HGT"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 59
+nav_order: 54
 ---
 
 # `PLAYER_HGT` `(skill)`

@@ -3,7 +3,7 @@ layout: default
 title: "CALL"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 14
+nav_order: 7
 ---
 
 # `CALL` `Action;`

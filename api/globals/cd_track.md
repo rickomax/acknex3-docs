@@ -3,7 +3,7 @@ layout: default
 title: "CD_TRACK"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 98
+nav_order: 7
 ---
 
 # `CD_TRACK` `(skill)`

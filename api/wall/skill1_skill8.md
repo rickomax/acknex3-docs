@@ -3,7 +3,7 @@ layout: default
 title: "SKILL1...SKILL8"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 9
+nav_order: 24
 ---
 
 # `SKILL1...SKILL8` `Number;`

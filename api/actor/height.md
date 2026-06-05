@@ -3,7 +3,7 @@ layout: default
 title: "HEIGHT"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 12
+nav_order: 15
 ---
 
 # `HEIGHT` `Number;`

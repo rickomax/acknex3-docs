@@ -3,7 +3,7 @@ layout: default
 title: "FADE_PAL"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 24
+nav_order: 14
 ---
 
 # `FADE_PAL` `Palette, Number/Skill;`

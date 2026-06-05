@@ -3,7 +3,7 @@ layout: default
 title: "PSOUND_TONE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 35
+nav_order: 68
 ---
 
 # `PSOUND_TONE` `(skill)`

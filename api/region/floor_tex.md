@@ -3,7 +3,7 @@ layout: default
 title: "FLOOR_TEX"
 parent: Regions (REGION)
 grand_parent: API Reference
-nav_order: 2
+nav_order: 15
 ---
 
 # `FLOOR_TEX` `Texture;`

@@ -3,7 +3,7 @@ layout: default
 title: "TRANSPARENT"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 23
+nav_order: 27
 ---
 
 # `TRANSPARENT` `(flag)`

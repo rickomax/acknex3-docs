@@ -3,7 +3,7 @@ layout: default
 title: "SIZE_X"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 20
+nav_order: 32
 ---
 
 # `SIZE_X` `Number;`

@@ -3,7 +3,7 @@ layout: default
 title: "SET"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 2
+nav_order: 42
 ---
 
 # `SET` `[Obj.]Key, Number/[Obj.]Key2;`

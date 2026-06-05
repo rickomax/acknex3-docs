@@ -3,7 +3,7 @@ layout: default
 title: "IF_FAR"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 14
+nav_order: 11
 ---
 
 # `IF_FAR` `Action;`

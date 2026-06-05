@@ -3,7 +3,7 @@ layout: default
 title: "RANGE"
 parent: Palettes
 grand_parent: API Reference
-nav_order: 3
+nav_order: 4
 ---
 
 # `RANGE` `s, l;`

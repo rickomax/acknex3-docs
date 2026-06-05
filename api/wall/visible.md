@@ -3,7 +3,7 @@ layout: default
 title: "VISIBLE"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 20
+nav_order: 28
 ---
 
 # `VISIBLE` `(flag)`

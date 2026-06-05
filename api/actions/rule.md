@@ -3,7 +3,7 @@ layout: default
 title: "RULE"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 6
+nav_order: 39
 ---
 
 # `RULE` `Skill = expression;`

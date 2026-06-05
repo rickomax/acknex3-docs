@@ -3,7 +3,7 @@ layout: default
 title: "DIST"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 8
+nav_order: 3
 ---
 
 # `DIST` `Number;`

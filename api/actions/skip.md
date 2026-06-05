@@ -3,7 +3,7 @@ layout: default
 title: "SKIP"
 parent: Actions & Instructions
 grand_parent: API Reference
-nav_order: 12
+nav_order: 45
 ---
 
 # `SKIP` `Number;`

@@ -3,7 +3,7 @@ layout: default
 title: "FLAG1...FLAG8"
 parent: Walls (WALL)
 grand_parent: API Reference
-nav_order: 30
+nav_order: 9
 ---
 
 # `FLAG1...FLAG8` `(flags)`

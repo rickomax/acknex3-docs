@@ -3,7 +3,7 @@ layout: default
 title: "TYPE"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 2
+nav_order: 92
 ---
 
 # `TYPE` `Keyword;`

@@ -3,7 +3,7 @@ layout: default
 title: "CYCLE"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 17
+nav_order: 4
 ---
 
 # `CYCLE` `n;`

@@ -3,7 +3,7 @@ layout: default
 title: "MAPFILE"
 parent: Predefined Settings
 grand_parent: API Reference
-nav_order: 9
+nav_order: 6
 ---
 
 # `MAPFILE` `<Filename>;`

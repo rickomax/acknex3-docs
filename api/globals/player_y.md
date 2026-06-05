@@ -3,7 +3,7 @@ layout: default
 title: "PLAYER_Y"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 52
+nav_order: 66
 ---
 
 # `PLAYER_Y` `(skill)`

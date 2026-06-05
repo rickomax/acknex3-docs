@@ -3,7 +3,7 @@ layout: default
 title: "SHOOT_X"
 parent: Globals & Predefined Skills
 grand_parent: API Reference
-nav_order: 46
+nav_order: 83
 ---
 
 # `SHOOT_X` `(skill)`

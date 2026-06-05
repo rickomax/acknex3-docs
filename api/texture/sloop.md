@@ -3,7 +3,7 @@ layout: default
 title: "SLOOP"
 parent: Textures (TEXTURE)
 grand_parent: API Reference
-nav_order: 16
+nav_order: 15
 ---
 
 # `SLOOP` `(flag)`
