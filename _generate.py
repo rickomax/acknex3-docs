@@ -20,18 +20,6 @@ def write(path, fm, body):
         f.write("---\n\n")
         f.write(body.rstrip() + "\n")
 
-# Availability badge text
-BADGE = {
-    "old":  "_Availability: WDL (1995 book)._",
-    "both": "_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._",
-    "new":  "_Availability: ACKNEX v3.8 / v3.9 (not in the 1995 book)._",
-}
-def avail_line(src, note=None):
-    line = BADGE.get(src, "")
-    if note:
-        line = line[:-1] + " " + note + "_" if line.endswith("_") else note
-        line = BADGE.get(src, "")[:-1] + " — " + note + "_"
-    return line
 
 # ---- Data model ----------------------------------------------------------
 # Each category: (slug, title, nav, summary, intro_md, [keywords])
@@ -458,6 +446,9 @@ os.makedirs(API)
 
 total_kw = sum(len(c["kws"]) for c in CATS)
 
+# Object types (groups) are listed alphabetically by title.
+CATS.sort(key=lambda c: c["title"].lower())
+
 # Home
 write(os.path.join(ROOT, "index.md"),
  [("layout","home"),("title","Home"),("nav_order","1")],
@@ -466,18 +457,31 @@ write(os.path.join(ROOT, "index.md"),
 English reference for **WDL** (World Definition Language), the scripting language
 of the **ACKNEX** engine (3D GameStudio).
 
-This documentation merges the keywords from the original 1995 German WDL manual
-(translated in [`wdl-reference/`](https://github.com/rickomax/acknex-book/tree/main/wdl-reference))
-with the official English ACKNEX **v3.8** and **v3.9** reference manuals.
-
 ---
 
-The [API Reference](api/) is split by **object type** (textures, walls, regions,
-actors, things, globals, actions, UI, …) and then by **keyword**. It currently
-documents **{len(CATS)}** object types and **{total_kw}** keywords.
+The [API Reference](api/) groups the **{total_kw}** keywords by **object type**
+(actions, actors, walls, regions, …), listed alphabetically. Prefer a single
+flat list? See the [Keywords A–Z](keywords.html) index.
+""")
 
-Each keyword page carries an _availability_ note indicating whether it comes from
-the 1995 book, the newer manuals, or both.
+# Alphabetical keyword index (ungrouped)
+all_kws = sorted(
+    ((k, c) for c in CATS for k in c["kws"]),
+    key=lambda pair: (pair[0]["name"].lower(), pair[1]["title"].lower()))
+arows = "\n".join(
+    f"| [`{k['name']}`](api/{c['slug']}/{slug(k['name'])}.html) "
+    f"| [{c['title']}](api/{c['slug']}.html) | {k['desc']} |"
+    for k, c in all_kws)
+write(os.path.join(ROOT, "keywords.md"),
+ [("layout","default"),("title","Keywords A–Z"),("nav_order","2")],
+ f"""# Keywords A–Z
+
+Every WDL keyword in a single alphabetical list, regardless of object type.
+There are **{total_kw}** keywords across **{len(CATS)}** object types.
+
+| Keyword | Object type | Summary |
+|:--------|:------------|:--------|
+{arows}
 """)
 
 # API index
@@ -485,10 +489,11 @@ rows = "\n".join(
     f"| [{c['title']}]({c['slug']}.html) | {len(c['kws'])} | {c['summary']} |"
     for c in CATS)
 write(os.path.join(API, "index.md"),
- [("layout","default"),("title","API Reference"),("nav_order","2"),("has_children","true")],
+ [("layout","default"),("title","API Reference"),("nav_order","3"),("has_children","true")],
  f"""# API Reference
 
-WDL keywords grouped by object type. Pick a type, then a keyword.
+WDL keywords grouped by object type (listed alphabetically). Pick a type, then a
+keyword — or browse the flat [Keywords A–Z](../keywords.html) index.
 
 | Object type | Keywords | Summary |
 |:------------|:--------:|:--------|
@@ -502,8 +507,7 @@ for ci, c in enumerate(CATS, start=1):
     for ki, k in enumerate(c["kws"], start=1):
         ks = slug(k["name"])
         sig = f" `{k['sig']}`" if k['sig'] else ""
-        tag = "removed" if k.get("removed") else k["src"]
-        krows.append(f"| [`{k['name']}`]({c['slug']}/{ks}.html) | {k['src']} | {k['desc']} |")
+        krows.append(f"| [`{k['name']}`]({c['slug']}/{ks}.html) | {k['desc']} |")
     ktable = "\n".join(krows)
     write(os.path.join(API, f"{c['slug']}.md"),
      [("layout","default"),("title",c["title"]),("parent","API Reference"),
@@ -512,8 +516,8 @@ for ci, c in enumerate(CATS, start=1):
 
 {c['intro']}
 
-| Keyword | Source | Summary |
-|:--------|:------:|:--------|
+| Keyword | Summary |
+|:--------|:--------|
 {ktable}
 """)
     # keyword pages
@@ -523,7 +527,6 @@ for ci, c in enumerate(CATS, start=1):
         body = f"# `{k['name']}`{sig}\n\n{k['desc']}\n"
         if k.get("note"):
             body += f"\n> **Note:** {k['note']}\n"
-        body += f"\n{BADGE[k['src']]}\n"
         title = k["name"].replace('"',"'")
         write(os.path.join(API, c["slug"], f"{ks}.md"),
          [("layout","default"),("title",f"\"{title}\""),("parent",c["title"]),

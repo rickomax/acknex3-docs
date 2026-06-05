@@ -9,5 +9,3 @@ nav_order: 2
 # `OVLY` `Keyword, <Filename> [, x, y, dx, dy];`
 
 Like BMAP, but defines an overlay bitmap (for cockpits, weapons, mouse pointers). Occupies more memory but draws faster. Horizontal size must be divisible by 4.
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

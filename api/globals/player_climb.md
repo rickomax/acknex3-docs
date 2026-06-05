@@ -9,5 +9,3 @@ nav_order: 28
 # `PLAYER_CLIMB` `(skill)`
 
 Maximum step-up height when changing region (default 1.5 Steps).
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

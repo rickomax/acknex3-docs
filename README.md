@@ -8,6 +8,7 @@ Definition Language), the scripting language of the **ACKNEX** engine
 
 ```
 index.md              Home
+keywords.md           Keywords A–Z (flat alphabetical list)
 api/index.md          API Reference (list of object types)
 api/<type>.md         One object type (e.g. actor, wall, globals)
 api/<type>/<kw>.md    One keyword page
@@ -15,7 +16,12 @@ api/<type>/<kw>.md    One keyword page
 
 The **API Reference** is split first by **object type** (textures, walls,
 regions, actors, things, ways, globals/skills, actions, panels, palettes,
-files, settings, synonyms) and then by **keyword**.
+files, settings, synonyms) — listed alphabetically — and then by **keyword**.
+The **Keywords A–Z** page lists every keyword in a single alphabetical index,
+ungrouped. ACKNEX is backwards
+compatible, so the reference documents the language as a single combined set.
+A few keywords renamed in newer versions (e.g. `INV_DIST`, `SLIDEDOOR`,
+`ACTIVE_REGTICKS`) carry a note pointing to their replacement.
 
 ## Building locally
 

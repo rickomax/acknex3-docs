@@ -9,5 +9,3 @@ nav_order: 4
 # `WAYPOINT` `n;`
 
 Sets a position point (1..32) of the Actor's Way as target; readable as the next waypoint number.
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

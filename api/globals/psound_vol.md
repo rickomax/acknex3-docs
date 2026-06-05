@@ -9,5 +9,3 @@ nav_order: 34
 # `PSOUND_VOL` `(skill)`
 
 Relative player (footstep) sound volume (0..2).
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

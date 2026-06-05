@@ -11,5 +11,3 @@ nav_order: 92
 Number of regions with running EACH_TICK actions (WRUN.EXE only).
 
 > **Note:** Removed in newer versions (only ACTIVE_OBJTICKS kept).
-
-_Availability: WDL (1995 book)._

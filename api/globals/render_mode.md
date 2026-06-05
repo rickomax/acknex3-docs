@@ -9,5 +9,3 @@ nav_order: 12
 # `RENDER_MODE` `(skill)`
 
 Render activity: 2 = full redraw, 1 = partial, 0.5 = normal, 0 = none. Auto-resets to 0.5.
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._

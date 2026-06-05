@@ -11,5 +11,3 @@ nav_order: 26
 The wall can be shifted sideways via POSITION.
 
 > **Note:** Removed under this name in newer versions (use POSITION directly).
-
-_Availability: WDL (1995 book)._

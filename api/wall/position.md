@@ -9,5 +9,3 @@ nav_order: 6
 # `POSITION` `Number;`
 
 Meaning depends on the flags (e.g. lateral position for SLIDEDOOR, edge alignment for PORTCULLIS).
-
-_Availability: WDL (1995 book) · ACKNEX v3.8 / v3.9._
