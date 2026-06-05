@@ -16,6 +16,7 @@ An Actor is an animate object — a linear automaton with definable action/react
 | [`ANGLE`](actor/angle.html) | Angle in radians (0..6.28), added to the WMP angle; changeable by actions. |
 | [`BERKELEY`](actor/berkeley.html) | Object inactive while unseen and beyond its boundary distance — saves time with many animated objects. |
 | [`BULLET`](actor/bullet.html) | Like MOVE, but triggers IF_HIT and sets RESULT=1 on impact (needs CAREFULLY for collision). |
+| [`CANDELABER`](actor/candelaber.html) | Only effective if GROUND is not set: the object attaches to the ceiling of its region instead of the floor. Useful for pendant objects like stalactites or candelabra. |
 | [`CAREFULLY`](actor/carefully.html) | Performs collision detection along a path, avoiding walls/actors and adjusting height (unless GROUND). Costs time. |
 | [`CYCLE`](actor/cycle.html) | Current animation phase of the texture. |
 | [`DIST`](actor/dist.html) | Boundary distance (default 0); exceeding it can trigger IF_NEAR. |

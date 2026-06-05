@@ -13,7 +13,7 @@ keyword — or browse the flat [Keywords A–Z](../keywords.html) index.
 | Object type | Keywords | Summary |
 |:------------|:--------:|:--------|
 | [Actions & Instructions](actions.html) | 48 | ACTION definitions, the instructions used inside them, and the global/event action keywords. |
-| [Actors (ACTOR)](actor.html) | 42 | The ACTOR object: animate objects with movement, targets, events and flags. Things share these keywords. |
+| [Actors (ACTOR)](actor.html) | 43 | The ACTOR object: animate objects with movement, targets, events and flags. Things share these keywords. |
 | [Files](files.html) | 6 | Keywords that assign external files (bitmaps, sounds, songs, animations) to a name. |
 | [Globals & Predefined Skills](globals.html) | 98 | Skill definitions and the predefined player, engine, input, time and debug skills. |
 | [Palettes](palette.html) | 4 | Definition of the 256-colour palette, shading ranges and colour animations. |

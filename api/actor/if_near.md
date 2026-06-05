@@ -3,7 +3,7 @@ layout: default
 title: "IF_NEAR"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 19
+nav_order: 20
 ---
 
 # `IF_NEAR` `Action;`

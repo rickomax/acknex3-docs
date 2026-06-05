@@ -3,7 +3,7 @@ layout: default
 title: "FLAG1...FLAG8"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 11
+nav_order: 12
 ---
 
 # `FLAG1...FLAG8` `(flags)`

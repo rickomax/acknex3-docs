@@ -3,7 +3,7 @@ layout: default
 title: "STICK"
 parent: Actors (ACTOR)
 grand_parent: API Reference
-nav_order: 36
+nav_order: 37
 ---
 
 # `STICK` `(target)`

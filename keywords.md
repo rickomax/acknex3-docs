@@ -7,7 +7,7 @@ nav_order: 2
 # Keywords A–Z
 
 Every WDL keyword in a single alphabetical list, regardless of object type.
-There are **308** keywords across **13** object types.
+There are **309** keywords across **13** object types.
 
 | Keyword | Object type | Summary |
 |:--------|:------------|:--------|
@@ -36,6 +36,7 @@ There are **308** keywords across **13** object types.
 | [`BRANCH`](api/actions/branch.html) | [Actions & Instructions](api/actions.html) | Aborts the current action and runs the given action immediately. |
 | [`BULLET`](api/actor/bullet.html) | [Actors (ACTOR)](api/actor.html) | Like MOVE, but triggers IF_HIT and sets RESULT=1 on impact (needs CAREFULLY for collision). |
 | [`CALL`](api/actions/call.html) | [Actions & Instructions](api/actions.html) | Runs the given action, then continues with the next instruction. |
+| [`CANDELABER`](api/actor/candelaber.html) | [Actors (ACTOR)](api/actor.html) | Only effective if GROUND is not set: the object attaches to the ceiling of its region instead of the floor. Useful for pendant objects like stalactites or candelabra. |
 | [`CAREFULLY`](api/actor/carefully.html) | [Actors (ACTOR)](api/actor.html) | Performs collision detection along a path, avoiding walls/actors and adjusting height (unless GROUND). Costs time. |
 | [`CD_TRACK`](api/globals/cd_track.html) | [Globals & Predefined Skills](api/globals.html) | Number of the CD-audio track currently playing (0 if stopped). |
 | [`CEIL_HGT`](api/globals/ceil_hgt.html) | [Globals & Predefined Skills](api/globals.html) | Actual ceiling height at the player position. |
