@@ -4,13 +4,6 @@ A [Just the Docs](https://just-the-docs.com/) site documenting **WDL** (World
 Definition Language), the scripting language of the **ACKNEX** engine
 (3D GameStudio).
 
-It merges:
-
-- the **1995 German WDL manual** (translated in
-  [`../wdl-reference/`](../wdl-reference)), and
-- the official English ACKNEX **v3.8** (`3dmanual.pdf`) and **v3.9**
-  (`ACKMAN.PDF`) reference manuals.
-
 ## Structure
 
 ```
